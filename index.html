@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yasser Chelali — Web Developer</title>
+<meta name="description" content="Yasser Chelali is a web developer building responsive websites, web applications, e-commerce platforms, and admin dashboards — from database to interface." />
+<meta name="theme-color" content="#0A0B0D" />
+
+<meta property="og:title" content="Yasser Chelali — Web Developer" />
+<meta property="og:description" content="Building digital experiences that work — websites, web applications, and the systems behind them." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<!-- ============================= NAVIGATION ============================= -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav-mark">YASSER</a>
+
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#build">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="#contact" class="btn btn-primary nav-cta magnetic">Let's Talk</a>
+
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <nav aria-label="Mobile">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#build">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn btn-primary mobile-cta">Let's Talk</a>
+</div>
+
+<!-- ============================= MAIN ============================= -->
+<main id="main">
+
+  <!-- HERO -->
+  <section id="home" class="section hero" aria-label="Introduction">
+    <div class="hero-copy">
+      <p class="hero-kicker reveal-line">Web Developer — based in Algeria</p>
+      <h1 class="hero-title">
+        <span class="reveal-line">Building digital</span>
+        <span class="reveal-line">experiences that work.</span>
+      </h1>
+      <p class="hero-sub reveal-line">
+        I design and build responsive websites, web applications, and the
+        systems behind them — from the database up to the interface someone
+        actually uses.
+      </p>
+      <div class="hero-actions reveal-line">
+        <a href="#work" class="btn btn-primary magnetic">View my work</a>
+        <a href="#contact" class="btn btn-ghost magnetic">Let's talk</a>
+      </div>
+      <div class="hero-stack reveal-line" aria-hidden="true">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual" aria-hidden="true">
+      <div class="float-card card-dashboard" data-depth="0.6" data-rotate="-4deg">
+        <div class="win-bar"><i></i><i></i><i></i></div>
+        <div class="win-body">
+          <div class="bar-row"><span style="width:70%"></span></div>
+          <div class="bar-row"><span style="width:45%"></span></div>
+          <div class="bar-row"><span style="width:85%"></span></div>
+          <div class="chip">Orders — 24 today</div>
+        </div>
+      </div>
+
+      <div class="float-card card-code" data-depth="1" data-rotate="3deg">
+        <div class="win-bar"><i></i><i></i><i></i></div>
+        <div class="win-body code-body">
+          <p><span class="c-kw">function</span> <span class="c-fn">getOrders</span>() {</p>
+          <p>&nbsp;&nbsp;<span class="c-kw">return</span> db.query(</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">'SELECT * FROM orders'</span></p>
+          <p>&nbsp;&nbsp;);</p>
+          <p>}</p>
+        </div>
+      </div>
+
+      <div class="float-card card-db" data-depth="0.4" data-rotate="5deg">
+        <div class="win-bar"><i></i><i></i><i></i></div>
+        <div class="win-body">
+          <table class="db-table">
+            <tr><th>id</th><th>product</th><th>qty</th></tr>
+            <tr><td>01</td><td>—</td><td>2</td></tr>
+            <tr><td>02</td><td>—</td><td>1</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="float-card card-ui" data-depth="0.8" data-rotate="-6deg">
+        <div class="ui-dot"></div>
+        <div class="ui-line" style="width:60%"></div>
+        <div class="ui-line" style="width:40%"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about" aria-label="About">
+    <p class="about-lead reveal" id="aboutLead"></p>
+    <div class="about-grid">
+      <div class="about-text reveal" id="aboutText"></div>
+      <ul class="about-facts reveal">
+        <li><span>Identity</span>Web Developer</li>
+        <li><span>Also builds</span>Native Android applications</li>
+        <li><span>Based in</span>Algeria</li>
+        <li><span>Currently</span>Computer science student, open to internships</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHAT I BUILD -->
+  <section id="build" class="section" aria-label="What I build">
+    <div class="section-head">
+      <span class="section-index">What I Build</span>
+      <h2>A studio of one, still covers the whole stack.</h2>
+    </div>
+    <div class="capability-grid" id="capabilityGrid"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section" aria-label="Skills">
+    <div class="section-head">
+      <span class="section-index">Skills</span>
+      <h2>The stack, web-first.</h2>
+      <p class="section-sub">Frontend, backend, and databases are where I live. Mobile is a secondary capability.</p>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section" aria-label="Featured work">
+    <div class="section-head">
+      <span class="section-index">Featured Work</span>
+      <h2>Systems built end to end.</h2>
+      <p class="section-sub">Open a project for the full case study — challenge, interface, and architecture.</p>
+    </div>
+    <div class="work-grid" id="workGrid"></div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section class="section process" aria-label="How I work">
+    <div class="section-head">
+      <span class="section-index">How I Work</span>
+      <h2>Idea to interface, in five steps.</h2>
+    </div>
+    <ol class="process-list" id="processList"></ol>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section approach" aria-label="Web development approach">
+    <div class="approach-inner">
+      <span class="section-index">Approach</span>
+      <h2 id="approachHeading"></h2>
+      <div class="approach-grid" id="approachGrid"></div>
+      <p class="approach-ai" id="approachAi"></p>
+    </div>
+  </section>
+
+  <!-- BRAND STATEMENT -->
+  <section class="section statement" aria-label="Statement">
+    <p id="brandStatement"></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact" aria-label="Contact">
+    <div class="contact-inner">
+      <div class="contact-heading">
+        <div>
+          <h2>Let's build<br><em>something great.</em></h2>
+        </div>
+        <div class="contact-intro">
+          <p>Have a website, web application, or digital product in mind? Tell me what you're building and let's turn the idea into something real.</p>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-info-head">
+            <span>GET IN TOUCH</span>
+            <i></i>
+          </div>
+          <div class="contact-grid" id="contactGrid"></div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="contact-info-head">
+            <span>TELL ME ABOUT YOUR PROJECT</span>
+            <i></i>
+          </div>
+
+          <div class="form-row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+
+          <label>
+            <span>Project type</span>
+            <select name="type" required>
+              <option value="" selected disabled>Select a project type</option>
+              <option>Website</option>
+              <option>Web Application</option>
+              <option>E-commerce</option>
+              <option>Business System</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+          </label>
+
+          <button class="btn btn-primary contact-submit magnetic" type="submit">
+            <span>Send Message</span><span>↗</span>
+          </button>
+          <p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <p class="footer-name">Yasser Chelali</p>
+    <p class="footer-title">Web Developer</p>
+  </div>
+  <div class="footer-links" id="footerLinks"></div>
+  <p class="footer-copy">© 2026 Yasser Chelali. Built by hand, not a template.</p>
+</footer>
+
+<!-- ============================= CASE STUDY MODAL ============================= -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+    <div class="modal-scroll" id="modalContent"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
