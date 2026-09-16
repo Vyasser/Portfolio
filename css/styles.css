@@ -569,6 +569,13 @@ main { padding-top: var(--nav-h); }
   background-size: 26px 26px;
   opacity: 0.5;
 }
+
+.work-visual img {
+    max-width: 100%;
+    display: block;
+    height: stretch;
+}
+
 .work-index {
   position: absolute;
   z-index: 1;
