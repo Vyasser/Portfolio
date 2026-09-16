@@ -190,6 +190,7 @@ p { margin: 0; }
   padding: 12px 0;
   border-bottom: 1px solid var(--border);
   color: var(--text-muted);
+  width: stretch;
 }
 .mobile-cta { align-self: flex-start; }
 
